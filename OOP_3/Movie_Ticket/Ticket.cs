@@ -109,5 +109,4 @@ namespace OOP_3.Movie_Ticket
     //}
 
        #endregion   
-    
 }
