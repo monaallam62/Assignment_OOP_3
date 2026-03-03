@@ -44,22 +44,22 @@ namespace OOP_3
             #endregion
 
             #region Question 3 part 2
-            Cinema cinema = new Cinema("Vox Cinema");
-            cinema.OpenCinema();
+            //Cinema cinema = new Cinema("Vox Cinema");
+            //cinema.OpenCinema();
 
-            SeatLocation seat1 = new SeatLocation(TypeOfTicket.A,5);
-            StandardTicket t1 = new StandardTicket("Inception", 120m, seat1);
-            VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
-            IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
+            //SeatLocation seat1 = new SeatLocation(TypeOfTicket.A,5);
+            //StandardTicket t1 = new StandardTicket("Inception", 120m, seat1);
+            //VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
+            //IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
 
-            Console.WriteLine("\n============== All Tickets ===============");
-            cinema.AddTicket(t1);
-            cinema.AddTicket(t2);
-            cinema.AddTicket(t3);
+            //Console.WriteLine("\n============== All Tickets ===============");
+            //cinema.AddTicket(t1);
+            //cinema.AddTicket(t2);
+            //cinema.AddTicket(t3);
 
-            cinema.PrintAllTickets();
-            cinema.PrintStatistics();
-            cinema.CloseCinema();
+            //cinema.PrintAllTickets();
+            //cinema.PrintStatistics();
+            //cinema.CloseCinema();
             #endregion
 
 
