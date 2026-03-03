@@ -1,4 +1,8 @@
-﻿namespace OOP_3
+﻿using OOP_3.CinmaClass;
+using OOP_3.Enumm;
+using OOP_3.Movie_Ticket;
+using static OOP_3.Movie_Ticket.Ticket;
+namespace OOP_3
 {
     internal class Program
     {
@@ -37,6 +41,25 @@
 
             //d) Can you create an object from a sealed class using new? Why or why not?
             //Yes i can cuz sealed only prevents inheritance it doesn't prevent object creation
+            #endregion
+
+            #region Question 3 part 2
+            Cinema cinema = new Cinema("Vox Cinema");
+            cinema.OpenCinema();
+
+            SeatLocation seat1 = new SeatLocation(TypeOfTicket.A,5);
+            StandardTicket t1 = new StandardTicket("Inception", 120m, seat1);
+            VIPTicket t2 = new VIPTicket("Avengers", 200m, true);
+            IMAXTicket t3 = new IMAXTicket("Dune", 180m, false);
+
+            Console.WriteLine("\n============== All Tickets ===============");
+            cinema.AddTicket(t1);
+            cinema.AddTicket(t2);
+            cinema.AddTicket(t3);
+
+            cinema.PrintAllTickets();
+            cinema.PrintStatistics();
+            cinema.CloseCinema();
             #endregion
 
 
